@@ -49,7 +49,7 @@ describe('Integration with ' + network.name + ' bitcoind', function() {
   it('handshakes', function(cb) {
     var peer = new Peer(opts);
     peer.once('version', function(m) {
-      m.version.should.be.above(70000);
+      m.version.should.be.above(170000);
       m.services.toString().should.equal('1');
       Math.abs(new Date() - m.timestamp).should.be.below(10000); // less than 10 seconds of time difference
       m.nonce.length.should.equal(8);
@@ -74,7 +74,7 @@ describe('Integration with ' + network.name + ' bitcoind', function() {
   };
   it('connects', function(cb) {
     connect(function(peer) {
-      peer.version.should.be.above(70000);
+      peer.version.should.be.above(170000);
       _.isString(peer.subversion).should.equal(true);
       _.isNumber(peer.bestHeight).should.equal(true);
       cb();
