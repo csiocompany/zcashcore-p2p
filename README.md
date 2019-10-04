@@ -1,6 +1,6 @@
 <img src="http://bitcore.io/css/images/bitcore-p2p.svg" alt="litecore payment protocol" height="35" width="102">
 
-Litecore P2P
+Zcash P2P
 =======
 
 [![NPM Package](https://img.shields.io/npm/v/litecore-p2p.svg?style=flat-square)](https://www.npmjs.org/package/litecore-p2p)
